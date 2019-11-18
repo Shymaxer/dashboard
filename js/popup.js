@@ -1,20 +1,22 @@
 $(document).ready(function () {
-    
-    //Скрыть PopUp при загрузке страницы    
-    PopUpHide();
+
+    PopUpHide("#popup1");
+    PopUpHide("#popup2");
 });
 
 
-//Функция отображения PopUp
-function PopUpShow() {
-    $("#popup1").show();
+function PopUpShow(popup) {
+    $(popup).show();
+
     document.body.style.overflow = "hidden";
 
-    
+
 }
-//Функция скрытия PopUp
-function PopUpHide() {
-    $("#popup1").hide();
-    
+
+function PopUpHide(popup) {
+    $(popup).hide();
+
+
+
     document.body.style.overflow = "auto";
 }

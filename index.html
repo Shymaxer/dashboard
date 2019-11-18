@@ -59,18 +59,22 @@
             <h2 class="intro_text2">Your last 30 days’ performance:</h2>
             <div class="intro_stats">
                 <div class="stats_block">
-                    <img src="/img/map.jpg">
+                    <div class="stats_image stats_image--blue">
+                        <img src="/img/map.jpg">
+                    </div>
                     <p class="stats_text1">46</p>
                     <p class="stats_text2">quotes</p>
                 </div>
                 <div class="stats_block">
-                    <img src="/img/ticket.jpg">
+                    <div class="stats_image stats_image--red">
+                        <img src="/img/tic.png">
+                    </div>
                     <div class="stats_text1">11</div>
                     <div class="stats_text2">bookingquotes</div>
                 </div>
                 <div class="stats_block">
-                    <div class="stats_image">
-                        <img src="/img/map.jpg">
+                    <div class="stats_image stats_image--gray">
+                        <img src="/img/percents.png">
                     </div>
                     <div class="stats_text1">30%</div>
                     <div class="stats_text2">conversion rate</div>
@@ -262,7 +266,8 @@
                     </div>
                 </div>
                 <div class="info-block-link">
-                    <a class="info-link" href="javascript:PopUpShow()"><img class="img img--link" src="img/question-mark.svg" alt=""> View
+                    <a class="info-link" id="popup_s_1" href="javascript:PopUpShow('#popup1')"><img
+                            class="img img--link" src="img/question-mark.svg" alt=""> View
                         all Months</a>
                 </div>
                 <div class="info-block-link"></div>
@@ -292,7 +297,8 @@
                 </div>
 
                 <div class="info-block-link">
-                    <a class="info-link" href="#"><img class="img img--link" src="img/question-mark.svg" alt=""> View
+                    <a class="info-link" id="popup_s_2" href="javascript:PopUpShow('#popup2')"><img
+                            class="img img--link" src="img/question-mark.svg" alt=""> View
                         All Offers</a>
                 </div>
             </div>
@@ -640,11 +646,35 @@
                 <p class="popup-content-total">total</p>
                 <p class="info-num popup-num popup-num--total">540</p>
             </div>
-            <a class="popup-close" href="javascript:PopUpHide()">x
+            <a class="popup-close" href="javascript:PopUpHide('#popup1')">x
             </a>
         </div>
     </div>
+    <div class="popup-back" id="popup2">
+        <div class="popup popup--offers">
+            <div class="popup-title-block">
+                <img src="img/discount.jpg" alt="">
+                <h2 class="popup-title">CURRENT OFFERS</h2>
+            </div>
 
+            <div class="info-block-content-elem info-block-content-elem--gray">
+                <a class="elem-gray-text elem-gray-text--link" href="#">7-Night Grand Irish Whiskey
+                    Experience</a>
+                <p class="elem-gray-text elem-gray-text--normal">FROM $1,298pp</p>
+            </div>
+            <div class="info-block-content-elem info-block-content-elem--gray">
+                <p class="elem-gray-text">Stay 3 for 2 at Sheen Falls Lodge </a>
+                    <p class="elem-gray-text elem-gray-text--normal">Oct - Dec 15 - Min 3 Nights</p>
+            </div>
+            <div class="info-block-content-elem info-block-content-elem--gray">
+                <p class="elem-gray-text">Free Upgrade to Executive Room at Davenport</p>
+                <p class="elem-gray-text elem-gray-text--normal">Oct 22 - Dec</p>
+            </div>
+
+            <a class="popup-close" href="javascript:PopUpHide('#popup2')">x
+            </a>
+        </div>
+    </div>
 
     <script src="js/Chart.bundle.js"></script>
     <script src="js/popup.js"></script>
