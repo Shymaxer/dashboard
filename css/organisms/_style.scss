@@ -1,0 +1,238 @@
+html {
+    background: #01273B;
+}
+
+body {
+    width: 80%;
+    background: #F6F8FA;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 121px;
+   
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.header_panel {
+
+    background: #F6F8FA;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 30%;
+}
+
+.logo {
+    margin-bottom: 15px;
+}
+
+
+
+
+.nav_link {
+    height: 28.94px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 7px;
+    color: #508FF4;
+    font: normal 14px/16px Arial;
+    text-decoration: none;
+
+
+}
+
+.nav-link--pending {
+    font: Bold 12px/14px Arial;
+    color: #FF6A6A;
+    text-transform: uppercase;
+}
+
+#top_panel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 45px;
+
+}
+
+.top_panel {
+    padding: 0;
+    width: 80%;
+
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+
+}
+
+.list {
+    list-style-type: none;
+}
+
+.tp_buttons {
+    height: 45px;
+    line-height: 45px;
+    color: #707070;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0;
+    text-align: center;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.list:hover {
+    background: #508FF4;
+
+    &>* {
+
+        color: #FFFFFF;
+    }
+}
+
+#intro {
+    background: url("/img/Ross-castle2.png") 100% 0% no-repeat;
+    background-position: top center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.intro {
+    width: 80%;
+    justify-content: center;
+    display: block;
+    text-align: center;
+    margin-top: 41px;
+    margin-bottom: 68px;
+
+}
+
+.intro_text1 {
+    justify-self: center;
+    
+    text-shadow: 0px 3px 6px #00000029;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #FFFFFF;
+}
+
+.intro_text2 {
+    font: Bold 22px/34px Arial;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.intro_stats {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0;
+
+}
+
+.stats_block {
+    width: 275px;
+    height: 240px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 25px #52575D1A;
+    border: 1px solid #E1E2E5;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.stats_image {
+    height: 59px;
+    width: 59px;
+    background: #00B49133;
+    color: #00B491;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats_text1 {
+    text-align: center;
+    font: Bold 60px/69px Arial;
+    letter-spacing: 1.88px;
+    color: #28323A;
+    text-transform: uppercase;
+}
+
+.stats_text2 {
+    text-align: center;
+    font: Bold 14px/22px Arial;
+    letter-spacing: 0;
+    color: #28323A;
+    text-transform: uppercase;
+}
+
+.stats_text3 {
+    text-align: center;
+    font: Bold 50px/58px Arial;
+    letter-spacing: 0;
+    color: #28323A;
+    text-transform: uppercase;
+}
+
+.diagramsBlock {
+    width: 80%;
+    
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.diagramsTitle {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 47px;
+}
+
+.diagramsContent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}

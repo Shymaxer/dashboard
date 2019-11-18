@@ -1,0 +1,20 @@
+.elem-gray-text {
+    text-align: left;
+    font: bold 14px/19px Arial;
+    letter-spacing: 0;
+    color: #5A5A5A;
+
+
+    &.elem-gray-text--normal {
+        font-weight: normal;
+
+        &::before {
+            content: "\00A0 - \00A0";
+        }
+    }
+
+    &.elem-gray-text--link {
+        font: Bold 15px/20px Arial;
+        color: #508FF4;
+    }
+}

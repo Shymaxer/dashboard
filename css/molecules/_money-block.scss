@@ -1,0 +1,57 @@
+.money-block {
+    padding-bottom: 30px;
+    .money-block-title {
+        text-align: center;
+        font: 14px/18px Arial;
+        font-weight: normal;
+        letter-spacing: 1.4px;
+        color: #5A5A5A;
+        text-transform: uppercase;
+        padding-bottom: 8px;
+
+        &.money-block-title--pink {
+            font: 10px/22px Arial;
+            font-weight: normal;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding-bottom: 1px;
+        }
+
+    }
+
+    .money-block-value {
+
+        text-align: center;
+        font: Bold 30px/20px Arial;
+        letter-spacing: 0;
+        color: #B766B9;
+
+        &.money-block-value--black {
+            color: black;
+        }
+
+        &.money-block-value--pink {
+            margin: 0;
+            padding: 0;
+            color: #5A5A5A;
+            text-align: center;
+            font: Bold 20px/23px Arial;
+            letter-spacing: 0.63px;
+        }
+
+        &::before {
+            content: "$";
+        }
+    }
+
+    &.money-block--pink {
+        padding: 10px 10px 10px 10px;
+        background: #F3EDFF 0% 0% no-repeat padding-box;
+        color: #5A5A5A;
+        margin: 0;
+        width: 100%;
+        &.money-block--pink--big{
+            padding: 20px 0;
+        }
+    }
+}

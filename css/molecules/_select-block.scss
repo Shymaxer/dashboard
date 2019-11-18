@@ -1,0 +1,16 @@
+.select-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.select-block-title {
+    width: 100%;
+    font: normal 12px/20px Arial;
+    letter-spacing: 0;
+    color: #28323A;
+    padding-right: 15.5px;
+    text-transform: uppercase;
+}

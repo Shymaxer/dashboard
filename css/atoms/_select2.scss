@@ -1,0 +1,92 @@
+.select2-container {
+
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    vertical-align: middle;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E0E7FF;
+    border-color: #E0E7FF;
+    border-radius: 0px;
+    outline: none;
+}
+
+.select2-container .select2-selection--single {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    height: 28px;
+    user-select: none;
+    -webkit-user-select: none;
+    outline: none;
+}
+
+[class^='select2'] {
+    border-radius: 0px !important;
+}
+
+.select2-container .select2-selection--single {
+    display: block;
+    padding-left: 3px;
+    padding-right: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 26px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 20px;
+    padding-right: 13px;
+}
+
+.select2-container--default .select2-results__option[aria-selected=true] {
+    background-color: #E5F3F9 !important;
+    color: #333 !important;
+
+    &::before {
+        content: '\2714';
+        padding-right: 5px;
+    }
+}
+
+.select2-container--default .select2-results__option[aria-selected=false] {
+    padding-left: 24px;
+}
+
+.select2-dropdown {
+
+    padding: 2px;
+
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: black transparent transparent transparent;
+    border-style: solid;
+    border-width: 0px 4px 0 4px;
+    height: 0;
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -2px;
+    position: absolute;
+    top: 50%;
+    width: 0;
+}
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    border-color: transparent transparent black transparent;
+    border-width: 0 4px 0px 4px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    
+    
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: black transparent transparent transparent;
+}

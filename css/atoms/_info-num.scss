@@ -1,0 +1,27 @@
+.info-num {
+    text-align: left;
+    font: Bold 38px/43px Arial;
+    letter-spacing: 1.19px;
+    color: #28323A;
+
+    &.info-num--small {
+        text-align: left;
+        font: Bold 24px/28px Arial;
+        letter-spacing: 0.75px;
+    }
+
+    &.popup-num {
+        font: Bold 22px/26px Arial;
+        letter-spacing: 0.69px;
+
+        &::before {
+            content: '$';
+        }
+
+        &.popup-num--total {
+            font: Bold 38px/43px Arial;
+            letter-spacing: 1.19px;
+            color: #8C54FF;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+.quotes-title {
+    font: Bold 16px/18px Arial;
+    letter-spacing: 0;
+    color: #000000;
+    margin-bottom: 15px;
+
+    &.quotes-title--small {
+        font: Bold 10px/11px Arial;
+        margin-bottom: 6px;
+    }
+
+    &.quotes-title--header {
+        font: Bold 14px/22px Arial;
+        color: #28323A;
+        text-transform: uppercase;
+    }
+}
+
+.quotes-price {
+    text-align: left;
+    font: Bold 14px/16px Arial;
+    letter-spacing: 0;
+    color: #000000;
+
+    &::before {
+        content: '$';
+    }
+
+    &.quotes-price--com {
+        font: normal 14px/16px Arial;
+
+        &::before {
+            content: '\00A0| Commission $';
+        }
+    }
+}
+
+.quotes-price-add {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.quotes-reg-text {
+    font: normal 10px/11px Arial;
+    letter-spacing: 0;
+    color: #000000;
+    margin-bottom: 6px;
+}
+
+.quotes-text-box {
+    width: fit-content;
+    background-color: #E5F3F9;
+    border-radius: 10px;
+    text-align: center;
+    font: Bold 10px/11px Arial;
+    letter-spacing: 0;
+    color: #000000;
+    padding: 5px 8px 3px;
+    margin-bottom: 16px;
+    opacity: 0.5;
+
+    &.quotes-text-box--red {
+        background-color: #FF6A6A26
+    }
+}

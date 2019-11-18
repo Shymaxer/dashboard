@@ -1,0 +1,31 @@
+.gold-coins {
+    display: flex;
+    justify-self: right;
+    justify-content: flex-end;
+    
+}
+
+.gold-coins-text {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    color: #28323A;
+    border-radius: 5px;
+    text-transform: uppercase;
+    position: relative;
+    padding: 9px 23px 9px 49px;
+}
+
+.gold-coins-image {  
+    position: absolute;
+    top: -30%;
+    left: -7%;
+    border-radius: 50%;
+    background: #FFF4C4 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 2px solid #FFFFFF;
+
+    .image-coin{
+        width: 55px;
+        height: 55px;
+    }
+}

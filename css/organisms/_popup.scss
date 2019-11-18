@@ -1,0 +1,28 @@
+.popup-back {
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+
+
+    .popup {
+        margin: 20px auto;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border: 1px solid #707070;
+        width: 35%;
+        max-width: 421px;
+        padding: 44px 58px 38px 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        opacity: 1;
+        position: relative;
+    }
+}

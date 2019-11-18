@@ -1,0 +1,28 @@
+.popup-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 8.5px;
+    padding-top: 12px;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #E0E7FF;
+
+    &.popup-content--last {
+        border-bottom-width: 2px;
+    }
+
+    &.popup-content--first {
+        border-top: solid;
+        border-top-width: 2px;
+        border-top-color: #E0E7FF;
+        margin-top: 23px;
+    }
+}
+
+.popup-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 11.5px;
+}

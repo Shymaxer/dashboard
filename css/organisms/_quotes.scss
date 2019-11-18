@@ -1,0 +1,30 @@
+.quotes {
+    width: 76%;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    box-shadow: 0px 3px 6px #CCCCCC1A;
+    border: 1px solid #E1E2E5;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 37px 30px 29px;
+    margin-bottom: 22px;
+}
+
+.quotes-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin-bottom: 29px;
+}
+
+.quotes-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.quotes-pag{
+    display: flex;
+    justify-content: flex-end;
+}

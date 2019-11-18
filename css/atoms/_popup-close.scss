@@ -1,0 +1,21 @@
+.popup-close{
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    background: #508FF4;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: -15px;
+    right: -15px; 
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    text-decoration: none;
+
+    &:hover{
+        background: rgb(19, 92, 211);
+    }
+}

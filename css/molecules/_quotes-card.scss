@@ -1,0 +1,22 @@
+.quotes-card {
+    display: flex;
+    
+    flex-direction: column;
+    padding: 12px 33px 16px 8px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 2px #00000021;
+    border: 2px solid #F6F8FA;
+    border-radius: 5px;
+}
+
+.quotes-card-desc {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 21px;
+
+    .quotes-card-desc-part {
+        display: flex;
+        flex-direction: column;
+        margin-right: 9px;
+    }
+}

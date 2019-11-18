@@ -1,0 +1,18 @@
+.info-block-content-elem {
+    display: flex;
+    flex-direction: column;
+
+    &.info-block-content-elem--gray {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        background-color: #F6F8FA;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 18px;
+        padding-left: 23px;
+        padding-bottom: 17px;
+        margin-bottom: 8px;
+
+    }
+}

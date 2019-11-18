@@ -1,0 +1,72 @@
+.info-title {
+    text-align: left;
+    font: Bold 16px/18px Arial;
+    letter-spacing: 0;
+    color: #28323A;
+    text-transform: uppercase;
+    margin-bottom: 63px;
+
+    &.info-title-header {
+        font: Bold 16px/22px Arial;
+        color: #4EB0D7;
+        margin-bottom: 0;
+        padding-left: 10px;
+
+        &.info-title-header--red {
+            color: #FF6A6A;
+        }
+
+        &.info-title-header--purple {
+            color: #8C54FF;
+        }
+
+        &.info-title-header--black {
+            color: #28323A;
+        }
+    }
+
+    &.info-title--elem {
+        font: normal 14px/22px Arial;
+        letter-spacing: 0.44px;
+        margin-bottom: 0;
+        text-transform: none;
+    }
+
+    &.info-title--main {
+        font: normal 24px/29px Libre Franklin;
+        letter-spacing: 0;
+        color: #28323AB3;
+    }
+
+    &.nfo-title--small {
+        text-align: left;
+        font: normal 14px/22px Arial;
+        letter-spacing: 0.44px;
+
+    }
+
+
+
+}
+
+.popup-title {
+    font: Bold 22px/22px Arial;
+    letter-spacing: 0;
+    color: #29333B;
+    text-transform: uppercase;
+}
+
+.popup-content-text {
+    font: normal 14px Arial;
+    letter-spacing: 0.44px;
+    color: #28323A;
+
+
+}
+
+.popup-content-total {
+    font: normal 14px/22px Arial;
+    letter-spacing: 0.44px;
+    color: #8C54FF;
+    text-transform: uppercase;
+}

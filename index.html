@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/dist/styles/index.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header_panel">
+            <a class="logo" href="#">
+                <img src="img/logo-AV-dash.svg" alt="">
+            </a>
+            <nav>
+                <a class="nav_link" href="#">
+                    <div class="pending-quotes">
+                        <h2 class="pend-quotes-count">8</h2>
+                        <h2 class="nav-link--pending">Pending quotes</h2>
+                    </div>
+                </a>
+                <a class="nav_link" href="#">New User</a>
+                <a class="nav_link" href="#">My Account</a>
+                <a class="nav_link" href="#">Client Side</a>
+                <a class="nav_link" href="#">Log Out</a>
+            </nav>
+        </div>
+
+    </header>
+    <section id="top_panel">
+        <ul class="top_panel">
+            <li class="list"><a class="tp_buttons" href="#">Dashboard</a></li>
+            <li class="list"><a class="tp_buttons" href="#">Quotes</a></li>
+            <li class="list"><a class="tp_buttons" href="#">Clients</a></li>
+            <li class="list"><a class="tp_buttons" href="#">Accommodations</a></li>
+            <li class="list"><a class="tp_buttons" href="#">Activities</a></li>
+            <li class="list"><a class="tp_buttons" href="#">Locations</a></li>
+            <li class="list"><a class="tp_buttons" href="#">Car Retails</a></li>
+            <li class="list"><a class="tp_buttons" href="#">Transactions</a></li>
+
+        </ul>
+    </section>
+    <section id="intro">
+        <div class="intro">
+            <div class="gold-coins">
+                <h3 class="gold-coins-text">
+                    <div class="gold-coins-image">
+                        <img class="image-coin" src="img/coins1.png" alt="">
+                    </div>
+                    3 gold coins
+                </h3>
+            </div>
+            <h1 class="intro_text1">Hello Amanda!</h1>
+
+
+            <h2 class="intro_text2">Your last 30 days’ performance:</h2>
+            <div class="intro_stats">
+                <div class="stats_block">
+                    <img src="/img/map.jpg">
+                    <p class="stats_text1">46</p>
+                    <p class="stats_text2">quotes</p>
+                </div>
+                <div class="stats_block">
+                    <img src="/img/ticket.jpg">
+                    <div class="stats_text1">11</div>
+                    <div class="stats_text2">bookingquotes</div>
+                </div>
+                <div class="stats_block">
+                    <div class="stats_image">
+                        <img src="/img/map.jpg">
+                    </div>
+                    <div class="stats_text1">30%</div>
+                    <div class="stats_text2">conversion rate</div>
+                </div>
+                <div class="stats_block">
+                    <div class="stats_image">
+                        <img src="/img/goal.svg" width="30" height="30">
+                    </div>
+                    <div class="stats_text3">$30,000</div>
+                    <div class="stats_text2">revenue achieved</div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <section class="diagramsBlock">
+        <h1 class="diagramsTitle info-title info-title--main">QUOTES - BOOKINGS - TARGETS & MORE</h1>
+        <div class="diagramsContent">
+            <div class="info-block">
+                <div class="info-block-left">
+                    <h3 class="info-title">Monthly Target</h3>
+                    <div class="money-block">
+                        <h4 class="money-block-title">current</h4>
+                        <p class="money-block-value" id="d1_v1">7,500</p>
+                    </div>
+                </div>
+                <div class="info-block-center">
+                    <div class="progress-bar">
+                        <canvas id="myChart_1" height="220px" width="220px"></canvas>
+                        <div class="progress-bar-info">
+                            <h3 class="progress-bar-value" id="pb_1"></h3>
+                            <p class="progress-bar-value progress-bar-value--target">of target</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="info-block-right">
+                    <div class="money-block">
+                        <h4 class="money-block-title">target</h4>
+                        <p class="money-block-value money-block-value--black" id="d1_v2">30,000</p>
+                    </div>
+                    <div class="money-block money-block--pink">
+                        <h4 class="money-block-title money-block-title--pink">Earning Potential</h4>
+                        <p class="money-block-value money-block-value--pink">450</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="info-block">
+                <div class="info-block-left">
+                    <h3 class="info-title">Monthly Target</h3>
+                    <div class="money-block">
+                        <h4 class="money-block-title">current</h4>
+                        <p class="money-block-value" id="d2_v1">200,000</p>
+                    </div>
+                </div>
+                <div class="info-block-center">
+                    <div class="progress-bar">
+                        <canvas id="myChart_2" height="220px" width="220px"></canvas>
+                        <div class="progress-bar-info">
+                            <h3 class="progress-bar-value" id="pb_2"></h3>
+                            <p class="progress-bar-value progress-bar-value--target">of target</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="info-block-right">
+                    <div class="money-block">
+                        <h4 class="money-block-title">target</h4>
+                        <p class="money-block-value money-block-value--black" id="d2_v2">180,000</p>
+                    </div>
+                    <div class="money-block money-block--pink">
+                        <h4 class="money-block-title money-block-title--pink">Earning Potential</h4>
+                        <p class="money-block-value money-block-value--pink">1,500</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="diagramsContent">
+            <div class="info-block info-block--stats">
+                <div class="info-block-header">
+                    <div class="info-block-header-titleblock">
+                        <img class="img img--info img--info--quotes" src="img/map.jpg" alt="">
+                        <h4 class="info-title info-title-header">QUOTES</h4>
+                    </div>
+                    <div class="select-block">
+                        <h4 class="select-block-title">sort by</h4>
+                        <select class="js-example-basic-single" name="state">
+                            <option value="DAY">Past 30 Days</option>
+                            <option value="MONTH">Days Month to</option>
+                            <option value="YEAR">Year to Date</option>
+                        </select>
+                    </div>
+                </div>
+                <hr>
+                <div class="info-block-content">
+                    <div class="info-block-content-elem">
+                        <h5 class="info-title info-title--elem">Total</h5>
+                        <h3 class="info-num">40</h3>
+                    </div>
+                    <div class="info-block-content-elem">
+                        <h5 class="info-title info-title--elem">Pending</h5>
+                        <h3 class="info-num">4</h3>
+                    </div>
+                    <div class="info-block-content-elem">
+                        <h5 class="info-title info-title--elem">Pending</h5>
+                        <h3 class="info-num">16</h3>
+                    </div>
+                    <div class="info-block-content-elem">
+                        <h5 class="info-title info-title--elem">Forget-me-nots</h5>
+                        <h3 class="info-num">1</h3>
+                    </div>
+                </div>
+                <div class="info-block-link">
+                    <a class="info-link" href="#"><img class="img img--link" src="img/question-mark.svg" alt=""> View
+                        Quotes</a>
+                </div>
+                <div class="info-block-link"></div>
+            </div>
+            <div class="info-block info-block--stats">
+                <div class="info-block-header">
+                    <div class="info-block-header-titleblock">
+                        <img class="img img--info" src="img/ticket.jpg" alt="">
+                        <h4 class="info-title info-title-header info-title-header--red">BOOKINGS</h4>
+                    </div>
+                    <div class="select-block">
+                        <h4 class="select-block-title">sort by</h4>
+                        <select class="js-example-basic-single" name="state">
+                            <option value="DAY">Past 30 Days</option>
+                            <option value="MONTH">Days Month to</option>
+                            <option value="YEAR">Year to Date</option>
+                        </select>
+                    </div>
+                </div>
+                <hr>
+                <div class="info-block-content">
+                    <div class="info-block-content-elem">
+                        <h5 class="info-title info-title--elem">This Month</h5>
+                        <h3 class="info-num">12</h3>
+                    </div>
+                    <div class="info-block-content-elem">
+                        <h5 class="info-title info-title--elem">Conversion Rate</h5>
+                        <h3 class="info-num">30%</h3>
+                    </div>
+                    <div class="info-block-content-elem">
+                        <h5 class="info-title info-title--elem">Revenue</h5>
+                        <h3 class="info-num">$6,700</h3>
+                    </div>
+                </div>
+                <div class="info-block-link">
+                    <a class="info-link" href="#"><img class="img img--link" src="img/question-mark.svg" alt=""> View
+                        Bookings</a>
+                </div>
+            </div>
+        </div>
+        <div class="diagramsContent">
+            <div class="info-block info-block--stats">
+                <div class="info-block-header">
+                    <div class="info-block-header-titleblock">
+                        <img class="img img--info img--info--quotes" src="img/money.jpg" alt="">
+                        <h4 class="info-title info-title-header info-title-header--purple">ESTIMATED FUTURE COMMISSIONS
+                        </h4>
+                    </div>
+                </div>
+                <hr>
+                <div class="info-block-content">
+                    <div class="info-block-content-elem">
+                        <h5 class="info-title info-title--elem">Total</h5>
+                        <h3 class="info-num">40</h3>
+                    </div>
+
+                    <div class="info-elems-block">
+                        <div class="info-block-content-elem">
+                            <h5 class="info-title info-title--elem">September '19</h5>
+                            <h3 class="info-num info-num--small">$240</h3>
+                        </div>
+                        <div class="info-block-content-elem">
+                            <h5 class="info-title info-title--elem">October '19</h5>
+                            <h3 class="info-num info-num--small">$410</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-block-content">
+                    <div class="money-block money-block--pink money-block--pink--big">
+                        <h4 class="money-block-title money-block-title--pink">Potential Earning from 90 Days of Hot
+                            Leadsl</h4>
+                        <p class="money-block-value money-block-value--pink">1500 Commission</p>
+                    </div>
+                </div>
+                <div class="info-block-link">
+                    <a class="info-link" href="javascript:PopUpShow()"><img class="img img--link" src="img/question-mark.svg" alt=""> View
+                        all Months</a>
+                </div>
+                <div class="info-block-link"></div>
+            </div>
+            <div class="info-block info-block--stats">
+                <div class="info-block-header">
+                    <div class="info-block-header-titleblock">
+                        <img class="img img--info" src="img/discount.jpg" alt="">
+                        <h4 class="info-title info-title-header info-title-header--black">Current Offers</h4>
+                    </div>
+                </div>
+                <hr>
+                <div class="info-block-content info-block-content--gray">
+                    <div class="info-block-content-elem info-block-content-elem--gray">
+                        <a class="elem-gray-text elem-gray-text--link" href="#">7-Night Grand Irish Whiskey
+                            Experience</a>
+                        <p class="elem-gray-text elem-gray-text--normal">FROM $1,298pp</p>
+                    </div>
+                    <div class="info-block-content-elem info-block-content-elem--gray">
+                        <p class="elem-gray-text">Stay 3 for 2 at Sheen Falls Lodge </a>
+                            <p class="elem-gray-text elem-gray-text--normal">Oct - Dec 15 - Min 3 Nights</p>
+                    </div>
+                    <div class="info-block-content-elem info-block-content-elem--gray">
+                        <p class="elem-gray-text">Free Upgrade to Executive Room at Davenport</p>
+                        <p class="elem-gray-text elem-gray-text--normal">Oct 22 - Dec</p>
+                    </div>
+                </div>
+
+                <div class="info-block-link">
+                    <a class="info-link" href="#"><img class="img img--link" src="img/question-mark.svg" alt=""> View
+                        All Offers</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="quotes">
+        <div class="quotes-header">
+            <h2 class="quotes-title quotes-title--header">Your Quotes</h2>
+            <div class="select-block">
+                <div class="switch-container">
+                    <p class="switch-text" id="quotecheck">Quotes</p>
+                    <label class="switch">
+                        <input type="checkbox" id="switch1">
+                        <span class="slider round"></span>
+                    </label>
+                    <p class="switch-text" id="bookcheck">Bookings</p>
+                </div>
+
+                <h4 class="select-block-title">sort by</h4>
+
+                <select class="js-example-basic-single" name="state">
+                    <option value="DAY">Past 30 Days</option>
+                    <option value="MONTH">Days Month to</option>
+                    <option value="YEAR">Year to Date</option>
+                </select>
+            </div>
+        </div>
+        <hr>
+        <div class="quotes-content">
+            <div class="quotes-card">
+                <h5 class="quotes-text-box">Emailed Client</h5>
+                <h4 class="quotes-title">7-Night Grand Irish Whiskey Experience</h4>
+                <div class="quotes-card-desc">
+                    <div class="quotes-card-desc-part">
+                        <p class="quotes-title quotes-title--small">Tour Reference</p>
+                        <p class="quotes-title quotes-title--small">Client Name</p>
+                        <p class="quotes-title quotes-title--small">Departure</p>
+                    </div>
+                    <div class="quotes-card-desc-part">
+                        <p class="quotes-reg-text">290729</p>
+                        <p class="quotes-reg-text">John Smith</p>
+                        <p class="quotes-reg-text">10/10/2020</p>
+                    </div>
+                </div>
+                <h4 class="quotes-price">PRICE</h4>
+            </div>
+            <div class="quotes-card">
+                <h5 class="quotes-text-box">Emailed Client</h5>
+                <h4 class="quotes-title">7-Night Grand Irish Whiskey Experience</h4>
+                <div class="quotes-card-desc">
+                    <div class="quotes-card-desc-part">
+                        <p class="quotes-title quotes-title--small">Tour Reference</p>
+                        <p class="quotes-title quotes-title--small">Client Name</p>
+                        <p class="quotes-title quotes-title--small">Departure</p>
+                    </div>
+                    <div class="quotes-card-desc-part">
+                        <p class="quotes-reg-text">290729</p>
+                        <p class="quotes-reg-text">John Smith</p>
+                        <p class="quotes-reg-text">10/10/2020</p>
+                    </div>
+                </div>
+                <div class="quotes-price-add">
+                    <h4 class="quotes-price">PRICE</h4>
+                    <h4 class="quotes-price quotes-price--com">PRICE</h4>
+                </div>
+            </div>
+            <div class="quotes-card">
+                <h5 class="quotes-text-box quotes-text-box--red">Quote ready to view</h5>
+                <h4 class="quotes-title">7-Night Grand Irish Whiskey Experience</h4>
+                <div class="quotes-card-desc">
+                    <div class="quotes-card-desc-part">
+                        <p class="quotes-title quotes-title--small">Tour Reference</p>
+                        <p class="quotes-title quotes-title--small">Client Name</p>
+                        <p class="quotes-title quotes-title--small">Departure</p>
+                    </div>
+                    <div class="quotes-card-desc-part">
+                        <p class="quotes-reg-text">290729</p>
+                        <p class="quotes-reg-text">John Smith</p>
+                        <p class="quotes-reg-text">10/10/2020</p>
+                    </div>
+                </div>
+                <div class="quotes-price-add">
+                    <h4 class="quotes-price">PRICE</h4>
+                    <h4 class="quotes-price quotes-price--com">PRICE</h4>
+                </div>
+            </div>
+            <div class="quotes-card">
+                <h5 class="quotes-text-box">Emailed Client</h5>
+                <h4 class="quotes-title">7-Night Grand Irish Whiskey Experience</h4>
+                <div class="quotes-card-desc">
+                    <div class="quotes-card-desc-part">
+                        <p class="quotes-title quotes-title--small">Tour Reference</p>
+                        <p class="quotes-title quotes-title--small">Client Name</p>
+                        <p class="quotes-title quotes-title--small">Departure</p>
+                    </div>
+                    <div class="quotes-card-desc-part">
+                        <p class="quotes-reg-text">290729</p>
+                        <p class="quotes-reg-text">John Smith</p>
+                        <p class="quotes-reg-text">10/10/2020</p>
+                    </div>
+                </div>
+                <div class="quotes-price-add">
+                    <h4 class="quotes-price">PRICE</h4>
+                    <h4 class="quotes-price quotes-price--com">PRICE</h4>
+                </div>
+            </div>
+            <div class="quotes-card">
+                <h5 class="quotes-text-box">Emailed Client</h5>
+                <h4 class="quotes-title">7-Night Grand Irish Whiskey Experience</h4>
+                <div class="quotes-card-desc">
+                    <div class="quotes-card-desc-part">
+                        <p class="quotes-title quotes-title--small">Tour Reference</p>
+                        <p class="quotes-title quotes-title--small">Client Name</p>
+                        <p class="quotes-title quotes-title--small">Departure</p>
+                    </div>
+                    <div class="quotes-card-desc-part">
+                        <p class="quotes-reg-text">290729</p>
+                        <p class="quotes-reg-text">John Smith</p>
+                        <p class="quotes-reg-text">10/10/2020</p>
+                    </div>
+                </div>
+                <div class="quotes-price-add">
+                    <h4 class="quotes-price">PRICE</h4>
+                    <h4 class="quotes-price quotes-price--com">PRICE</h4>
+                </div>
+            </div>
+            <div class="quotes-card">
+                <h5 class="quotes-text-box">Emailed Client</h5>
+                <h4 class="quotes-title">7-Night Grand Irish Whiskey Experience</h4>
+                <div class="quotes-card-desc">
+                    <div class="quotes-card-desc-part">
+                        <p class="quotes-title quotes-title--small">Tour Reference</p>
+                        <p class="quotes-title quotes-title--small">Client Name</p>
+                        <p class="quotes-title quotes-title--small">Departure</p>
+                    </div>
+                    <div class="quotes-card-desc-part">
+                        <p class="quotes-reg-text">290729</p>
+                        <p class="quotes-reg-text">John Smith</p>
+                        <p class="quotes-reg-text">10/10/2020</p>
+                    </div>
+                </div>
+                <div class="quotes-price-add">
+                    <h4 class="quotes-price">PRICE</h4>
+                    <h4 class="quotes-price quotes-price--com">PRICE</h4>
+                </div>
+            </div>
+            <div class="quotes-card">
+                <h5 class="quotes-text-box">Emailed Client</h5>
+                <h4 class="quotes-title">7-Night Grand Irish Whiskey Experience</h4>
+                <div class="quotes-card-desc">
+                    <div class="quotes-card-desc-part">
+                        <p class="quotes-title quotes-title--small">Tour Reference</p>
+                        <p class="quotes-title quotes-title--small">Client Name</p>
+                        <p class="quotes-title quotes-title--small">Departure</p>
+                    </div>
+                    <div class="quotes-card-desc-part">
+                        <p class="quotes-reg-text">290729</p>
+                        <p class="quotes-reg-text">John Smith</p>
+                        <p class="quotes-reg-text">10/10/2020</p>
+                    </div>
+                </div>
+                <div class="quotes-price-add">
+                    <h4 class="quotes-price">PRICE</h4>
+                    <h4 class="quotes-price quotes-price--com">PRICE</h4>
+                </div>
+            </div>
+            <div class="quotes-card">
+                <h5 class="quotes-text-box">Emailed Client</h5>
+                <h4 class="quotes-title">7-Night Grand Irish Whiskey Experience</h4>
+                <div class="quotes-card-desc">
+                    <div class="quotes-card-desc-part">
+                        <p class="quotes-title quotes-title--small">Tour Reference</p>
+                        <p class="quotes-title quotes-title--small">Client Name</p>
+                        <p class="quotes-title quotes-title--small">Departure</p>
+                    </div>
+                    <div class="quotes-card-desc-part">
+                        <p class="quotes-reg-text">290729</p>
+                        <p class="quotes-reg-text">John Smith</p>
+                        <p class="quotes-reg-text">10/10/2020</p>
+                    </div>
+                </div>
+                <div class="quotes-price-add">
+                    <h4 class="quotes-price">PRICE</h4>
+                    <h4 class="quotes-price quotes-price--com">PRICE</h4>
+                </div>
+            </div>
+            <div class="quotes-card">
+                <h5 class="quotes-text-box">Emailed Client</h5>
+                <h4 class="quotes-title">7-Night Grand Irish Whiskey Experience</h4>
+                <div class="quotes-card-desc">
+                    <div class="quotes-card-desc-part">
+                        <p class="quotes-title quotes-title--small">Tour Reference</p>
+                        <p class="quotes-title quotes-title--small">Client Name</p>
+                        <p class="quotes-title quotes-title--small">Departure</p>
+                    </div>
+                    <div class="quotes-card-desc-part">
+                        <p class="quotes-reg-text">290729</p>
+                        <p class="quotes-reg-text">John Smith</p>
+                        <p class="quotes-reg-text">10/10/2020</p>
+                    </div>
+                </div>
+                <div class="quotes-price-add">
+                    <h4 class="quotes-price">PRICE</h4>
+                    <h4 class="quotes-price quotes-price--com">PRICE</h4>
+                </div>
+            </div>
+            <div class="quotes-card">
+                <h5 class="quotes-text-box">Emailed Client</h5>
+                <h4 class="quotes-title">7-Night Grand Irish Whiskey Experience</h4>
+                <div class="quotes-card-desc">
+                    <div class="quotes-card-desc-part">
+                        <p class="quotes-title quotes-title--small">Tour Reference</p>
+                        <p class="quotes-title quotes-title--small">Client Name</p>
+                        <p class="quotes-title quotes-title--small">Departure</p>
+                    </div>
+                    <div class="quotes-card-desc-part">
+                        <p class="quotes-reg-text">290729</p>
+                        <p class="quotes-reg-text">John Smith</p>
+                        <p class="quotes-reg-text">10/10/2020</p>
+                    </div>
+                </div>
+                <div class="quotes-price-add">
+                    <h4 class="quotes-price">PRICE</h4>
+                    <h4 class="quotes-price quotes-price--com">PRICE</h4>
+                </div>
+            </div>
+            <div class="quotes-card">
+                <h5 class="quotes-text-box">Emailed Client</h5>
+                <h4 class="quotes-title">7-Night Grand Irish Whiskey Experience</h4>
+                <div class="quotes-card-desc">
+                    <div class="quotes-card-desc-part">
+                        <p class="quotes-title quotes-title--small">Tour Reference</p>
+                        <p class="quotes-title quotes-title--small">Client Name</p>
+                        <p class="quotes-title quotes-title--small">Departure</p>
+                    </div>
+                    <div class="quotes-card-desc-part">
+                        <p class="quotes-reg-text">290729</p>
+                        <p class="quotes-reg-text">John Smith</p>
+                        <p class="quotes-reg-text">10/10/2020</p>
+                    </div>
+                </div>
+                <div class="quotes-price-add">
+                    <h4 class="quotes-price">PRICE</h4>
+                    <h4 class="quotes-price quotes-price--com">PRICE</h4>
+                </div>
+            </div>
+            <div class="quotes-card">
+                <h5 class="quotes-text-box">Emailed Client</h5>
+                <h4 class="quotes-title">7-Night Grand Irish Whiskey Experience</h4>
+                <div class="quotes-card-desc">
+                    <div class="quotes-card-desc-part">
+                        <p class="quotes-title quotes-title--small">Tour Reference</p>
+                        <p class="quotes-title quotes-title--small">Client Name</p>
+                        <p class="quotes-title quotes-title--small">Departure</p>
+                    </div>
+                    <div class="quotes-card-desc-part">
+                        <p class="quotes-reg-text">290729</p>
+                        <p class="quotes-reg-text">John Smith</p>
+                        <p class="quotes-reg-text">10/10/2020</p>
+                    </div>
+                </div>
+                <div class="quotes-price-add">
+                    <h4 class="quotes-price">PRICE</h4>
+                    <h4 class="quotes-price quotes-price--com">PRICE</h4>
+                </div>
+            </div>
+        </div>
+        <div class="quotes-pag">
+            <div class="pagination">
+                <a class="blocked" href="#">&lt;&lt; previous</a>
+                <a class="active" href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">next &gt;&gt;</a>
+            </div>
+        </div>
+    </section>
+    <section class="revenue">
+        <div class="quotes-header">
+            <h2 class="quotes-title quotes-title--header">Yoy Revenue</h2>
+
+        </div>
+        <hr>
+        <canvas id="barChart" width="1100px" height="312px"></canvas>
+    </section>
+    <div class="popup-back" id="popup1">
+        <div class="popup">
+            <div class="popup-title-block">
+                <img src="img/money.jpg" alt="">
+                <h2 class="popup-title">Your Estimated Commissions</h2>
+            </div>
+            <select class="js-example-basic-single" name="state">
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+            </select>
+            <div class="popup-content popup-content--first">
+                <p class="popup-content-text">January</p>
+                <p class="info-num popup-num">240</p>
+            </div>
+            <div class="popup-content">
+                <p class="popup-content-text">February</p>
+                <p class="info-num popup-num">125</p>
+            </div>
+            <div class="popup-content">
+                <p class="popup-content-text">March</p>
+                <p class="info-num popup-num">310</p>
+            </div>
+            <div class="popup-content">
+                <p class="popup-content-text">April</p>
+                <p class="info-num popup-num">540</p>
+            </div>
+            <div class="popup-content">
+                <p class="popup-content-text">June</p>
+                <p class="info-num popup-num">240</p>
+            </div>
+            <div class="popup-content">
+                <p class="popup-content-text">July</p>
+                <p class="info-num popup-num">125</p>
+            </div>
+            <div class="popup-content">
+                <p class="popup-content-text">August</p>
+                <p class="info-num popup-num">310</p>
+            </div>
+            <div class="popup-content">
+                <p class="popup-content-text">September</p>
+                <p class="info-num popup-num">540</p>
+            </div>
+            <div class="popup-content">
+                <p class="popup-content-text">October</p>
+                <p class="info-num popup-num">125</p>
+            </div>
+            <div class="popup-content">
+                <p class="popup-content-text">November</p>
+                <p class="info-num popup-num">310</p>
+            </div>
+            <div class="popup-content popup-content--last">
+                <p class="popup-content-text">December</p>
+                <p class="info-num popup-num">540</p>
+            </div>
+            <div class="popup-total">
+                <p class="popup-content-total">total</p>
+                <p class="info-num popup-num popup-num--total">540</p>
+            </div>
+            <a class="popup-close" href="javascript:PopUpHide()">x
+            </a>
+        </div>
+    </div>
+
+
+    <script src="js/Chart.bundle.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/circle-progress-bar.min.js"></script>
+    <script src="js/progress_bar.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/Chart.roundedBarCharts.min.js"></script>
+    <script src="js/bar-chart.js"></script>
+    <script src="js/switch.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
