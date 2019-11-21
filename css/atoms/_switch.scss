@@ -3,7 +3,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 44px;
+    margin-right: 47px;
+    padding-bottom: 9px;
 }
 
 .switch {
@@ -11,6 +12,7 @@
     display: inline-block;
     width: 40px;
     height: 20px;
+    margin-right: 5px;
 }
 
 /* Hide default HTML checkbox */
@@ -48,19 +50,21 @@
     transition: .4s;
 }
 
-#bookcheck{
+#bookcheck {
     color: #508FF4;
 }
-#quotecheck{
+
+#quotecheck {
     color: #3D3D3D;
 }
 
-input:checked+.slider{
-    
-    #bookcheck{
+input:checked+.slider {
+
+    #bookcheck {
         color: #508FF4;
     }
-    #quotecheck{
+
+    #quotecheck {
         color: #3D3D3D;
     }
 }

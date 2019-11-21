@@ -12,6 +12,13 @@
     outline: none;
 }
 
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    font: normal 14px/20px Arial;
+    letter-spacing: 0;
+    color: #28323A;
+    line-height: 28px;
+}
+
 .select2-container .select2-selection--single {
     box-sizing: border-box;
     cursor: pointer;
@@ -29,7 +36,7 @@
 .select2-container .select2-selection--single {
     display: block;
     padding-left: 3px;
-    padding-right: 70px;
+    padding-right: 60px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -82,10 +89,7 @@
     border-width: 0 4px 0px 4px;
 }
 
-.select2-container--default .select2-selection--single .select2-selection__arrow {
-    
-    
-}
+.select2-container--default .select2-selection--single .select2-selection__arrow {}
 
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
     border-color: black transparent transparent transparent;

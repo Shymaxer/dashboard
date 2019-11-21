@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/dist/styles/index.min.css">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
 </head>
@@ -45,17 +46,18 @@
     </section>
     <section id="intro">
         <div class="intro">
-            <div class="gold-coins">
-                <h3 class="gold-coins-text">
-                    <div class="gold-coins-image">
-                        <img class="image-coin" src="img/coins1.png" alt="">
+            <div class="h-and-coin">
+                <h1 class="intro_text1">Hello Amanda!</h1>
+                <div class="gold-coins">
+                    <div class="gold-coins-block">
+                        <div class="gold-coins-image">
+                            <img class="image-coin" src="img/coins1.png" alt="">
+                        </div>
+                        <p class="coin-count">3</p>
+                        <p class="coin-text">gold coins</p>
                     </div>
-                    3 gold coins
-                </h3>
+                </div>
             </div>
-            <h1 class="intro_text1">Hello Amanda!</h1>
-
-
             <h2 class="intro_text2">Your last 30 days’ performance:</h2>
             <div class="intro_stats">
                 <div class="stats_block">
@@ -70,7 +72,7 @@
                         <img src="/img/tic.png">
                     </div>
                     <div class="stats_text1">11</div>
-                    <div class="stats_text2">bookingquotes</div>
+                    <div class="stats_text2">bookings</div>
                 </div>
                 <div class="stats_block">
                     <div class="stats_image stats_image--gray">
@@ -87,8 +89,6 @@
                     <div class="stats_text2">revenue achieved</div>
                 </div>
             </div>
-
-
         </div>
     </section>
     <section class="diagramsBlock">
@@ -99,21 +99,20 @@
                     <h3 class="info-title">Monthly Target</h3>
                     <div class="money-block">
                         <h4 class="money-block-title">current</h4>
-                        <p class="money-block-value" id="d1_v1">7,500</p>
+                        <p class="money-block-value" id="d1_v1">45,000</p>
                     </div>
                 </div>
                 <div class="info-block-center">
                     <div class="progress-bar">
-                        <canvas id="myChart_1" height="220px" width="220px"></canvas>
+                        <canvas id="myChart_1" height="210px" width="210px"></canvas>
                         <div class="progress-bar-info">
                             <h3 class="progress-bar-value" id="pb_1"></h3>
                             <p class="progress-bar-value progress-bar-value--target">of target</p>
                         </div>
-
                     </div>
                 </div>
                 <div class="info-block-right">
-                    <div class="money-block">
+                    <div class="money-block money-block--right">
                         <h4 class="money-block-title">target</h4>
                         <p class="money-block-value money-block-value--black" id="d1_v2">30,000</p>
                     </div>
@@ -122,28 +121,26 @@
                         <p class="money-block-value money-block-value--pink">450</p>
                     </div>
                 </div>
-
             </div>
             <div class="info-block">
                 <div class="info-block-left">
-                    <h3 class="info-title">Monthly Target</h3>
+                    <h3 class="info-title">yearly Target</h3>
                     <div class="money-block">
                         <h4 class="money-block-title">current</h4>
                         <p class="money-block-value" id="d2_v1">200,000</p>
                     </div>
                 </div>
-                <div class="info-block-center">
+                <div class="info-block-center info-block-center--2">
                     <div class="progress-bar">
-                        <canvas id="myChart_2" height="220px" width="220px"></canvas>
+                        <canvas id="myChart_2" height="210px" width="210px"></canvas>
                         <div class="progress-bar-info">
                             <h3 class="progress-bar-value" id="pb_2"></h3>
                             <p class="progress-bar-value progress-bar-value--target">of target</p>
                         </div>
                     </div>
-
                 </div>
                 <div class="info-block-right">
-                    <div class="money-block">
+                    <div class="money-block money-block--right">
                         <h4 class="money-block-title">target</h4>
                         <p class="money-block-value money-block-value--black" id="d2_v2">180,000</p>
                     </div>
@@ -190,8 +187,7 @@
                     </div>
                 </div>
                 <div class="info-block-link">
-                    <a class="info-link" href="#"><img class="img img--link" src="img/question-mark.svg" alt=""> View
-                        Quotes</a>
+                    <a class="info-link" href="#"> View Quotes</a>
                 </div>
                 <div class="info-block-link"></div>
             </div>
@@ -220,40 +216,38 @@
                         <h5 class="info-title info-title--elem">Conversion Rate</h5>
                         <h3 class="info-num">30%</h3>
                     </div>
-                    <div class="info-block-content-elem">
+                    <div class="info-block-content-elem info-block-content-elem--m ">
                         <h5 class="info-title info-title--elem">Revenue</h5>
                         <h3 class="info-num">$6,700</h3>
                     </div>
                 </div>
                 <div class="info-block-link">
-                    <a class="info-link" href="#"><img class="img img--link" src="img/question-mark.svg" alt=""> View
-                        Bookings</a>
+                    <a class="info-link" href="#"> View Bookings</a>
                 </div>
             </div>
         </div>
         <div class="diagramsContent">
-            <div class="info-block info-block--stats">
-                <div class="info-block-header">
+            <div class="info-block info-block--stats info-block--stats--2">
+                <div class="info-block-header info-block-header--2">
                     <div class="info-block-header-titleblock">
-                        <img class="img img--info img--info--quotes" src="img/money.jpg" alt="">
+                        <img class="img img--info img--info--quotes" src="img/money.png" alt="">
                         <h4 class="info-title info-title-header info-title-header--purple">ESTIMATED FUTURE COMMISSIONS
                         </h4>
                     </div>
                 </div>
-                <hr>
-                <div class="info-block-content">
+                <hr class="hr hr--2">
+                <div class="info-block-content info-block-content--2 ">
                     <div class="info-block-content-elem">
                         <h5 class="info-title info-title--elem">Total</h5>
-                        <h3 class="info-num">40</h3>
+                        <h3 class="info-num">$650</h3>
                     </div>
-
                     <div class="info-elems-block">
                         <div class="info-block-content-elem">
-                            <h5 class="info-title info-title--elem">September '19</h5>
+                            <h5 class="info-title info-title--elem info-title--elem--small">September '19</h5>
                             <h3 class="info-num info-num--small">$240</h3>
                         </div>
-                        <div class="info-block-content-elem">
-                            <h5 class="info-title info-title--elem">October '19</h5>
+                        <div class="info-block-content-elem ">
+                            <h5 class="info-title info-title--elem info-title--elem--small">October '19</h5>
                             <h3 class="info-num info-num--small">$410</h3>
                         </div>
                     </div>
@@ -266,21 +260,20 @@
                     </div>
                 </div>
                 <div class="info-block-link">
-                    <a class="info-link" id="popup_s_1" href="javascript:PopUpShow('#popup1')"><img
-                            class="img img--link" src="img/question-mark.svg" alt=""> View
-                        all Months</a>
+                    <a class="info-link" id="popup_s_1" href="javascript:PopUpShow('#popup1')">
+                        View all Months</a>
                 </div>
                 <div class="info-block-link"></div>
             </div>
-            <div class="info-block info-block--stats">
-                <div class="info-block-header">
+            <div class="info-block info-block--stats info-block--stats--2">
+                <div class="info-block-header info-block-header--2">
                     <div class="info-block-header-titleblock">
                         <img class="img img--info" src="img/discount.jpg" alt="">
                         <h4 class="info-title info-title-header info-title-header--black">Current Offers</h4>
                     </div>
                 </div>
-                <hr>
-                <div class="info-block-content info-block-content--gray">
+                <hr class="hr hr--2">
+                <div class="info-block-content info-block-content--gray info-block-content--2 ">
                     <div class="info-block-content-elem info-block-content-elem--gray">
                         <a class="elem-gray-text elem-gray-text--link" href="#">7-Night Grand Irish Whiskey
                             Experience</a>
@@ -297,13 +290,11 @@
                 </div>
 
                 <div class="info-block-link">
-                    <a class="info-link" id="popup_s_2" href="javascript:PopUpShow('#popup2')"><img
-                            class="img img--link" src="img/question-mark.svg" alt=""> View
-                        All Offers</a>
+                    <a class="info-link" id="popup_s_2" href="javascript:PopUpShow('#popup2')">
+                        View All Offers</a>
                 </div>
             </div>
         </div>
-
     </section>
     <section class="quotes">
         <div class="quotes-header">
@@ -327,7 +318,7 @@
                 </select>
             </div>
         </div>
-        <hr>
+        <hr class="hr hr--quotes">
         <div class="quotes-content">
             <div class="quotes-card">
                 <h5 class="quotes-text-box">Emailed Client</h5>
@@ -583,15 +574,14 @@
     <section class="revenue">
         <div class="quotes-header">
             <h2 class="quotes-title quotes-title--header">Yoy Revenue</h2>
-
         </div>
-        <hr>
-        <canvas id="barChart" width="1100px" height="312px"></canvas>
+        <hr class="hr hr--revenue">
+        <canvas id="barChart" width="1110px" height="342px"></canvas>
     </section>
     <div class="popup-back" id="popup1">
         <div class="popup">
             <div class="popup-title-block">
-                <img src="img/money.jpg" alt="">
+                <img src="img/money.png" alt="">
                 <h2 class="popup-title">Your Estimated Commissions</h2>
             </div>
             <select class="js-example-basic-single" name="state">
@@ -656,7 +646,6 @@
                 <img src="img/discount.jpg" alt="">
                 <h2 class="popup-title">CURRENT OFFERS</h2>
             </div>
-
             <div class="info-block-content-elem info-block-content-elem--gray">
                 <a class="elem-gray-text elem-gray-text--link" href="#">7-Night Grand Irish Whiskey
                     Experience</a>

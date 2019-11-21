@@ -20,7 +20,8 @@ var barChartData = {
                 4,
                 8
             ],
-            barPercentage: 0.3,
+            barPercentage: 0.4,
+            categoryPercentage:	0.4
            
         },
         {
@@ -42,7 +43,8 @@ var barChartData = {
                 10
 
             ],
-            barPercentage: 0.3,
+            barPercentage: 0.4,
+            categoryPercentage:	0.4
         },
     ]
 
@@ -63,6 +65,25 @@ window.myBar = new Chart(ctx, {
             }
         },
         cornerRadius: 20,
+        scales: {
+            xAxes: [{
+                gridLines: {
+                    drawBorder: true,
+                    display:false,
+                    
+                },
+                ticks: {
+                        fontSize: 16
+                       }
+            }],
+            yAxes: [{
+        
+                ticks: {
+                        fontSize: 16
+                       }
+            }],
+            
+        },
 
     }
 });

@@ -6,4 +6,13 @@ hr {
     width: auto;
     margin: 0;
     margin-bottom: 20px;
+    &.hr--2{
+        margin-bottom: 18px;
+    }
+    &.hr--revenue{
+        margin-bottom: 6px;
+    }
+    &.hr--quotes{
+        margin-bottom: 18px;
+    }
 }

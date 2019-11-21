@@ -1,30 +1,48 @@
 .gold-coins {
     display: flex;
-    justify-self: right;
+    margin-left: auto;
     justify-content: flex-end;
-    
+
 }
 
-.gold-coins-text {
+.gold-coins-block {
+    max-height: 42px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 1px solid #707070;
+    border: 1px solid #707070;   
+    border-radius: 5px;   
+    position: relative;
+    padding-right: 23px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.coin-text{
+    font: Bold 14px/16px Arial;
+    letter-spacing: 0;
     color: #28323A;
     border-radius: 5px;
     text-transform: uppercase;
-    position: relative;
-    padding: 9px 23px 9px 49px;
+    
+    
 }
 
-.gold-coins-image {  
+.coin-count {
+    font: Bold 22px/16px Arial;
+    letter-spacing: 0;
+    color: #28323A;
+    padding: 9px 0 9px 55px;
+}
+
+.gold-coins-image {
     position: absolute;
     top: -30%;
-    left: -7%;
+    left: -10%;
     border-radius: 50%;
     background: #FFF4C4 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     border: 2px solid #FFFFFF;
 
-    .image-coin{
+    .image-coin {
         width: 55px;
         height: 55px;
     }

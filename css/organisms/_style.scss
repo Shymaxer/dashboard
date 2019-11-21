@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    width: 80%;
+
     background: #F6F8FA;
     font-family: Arial, sans-serif;
     display: flex;
@@ -11,7 +11,9 @@ body {
     margin: 0 auto;
     justify-content: center;
     margin-bottom: 121px;
-
+    padding-top: 43px;
+    margin-left: 171px;
+    margin-right: 213px;
 }
 
 h1,
@@ -25,45 +27,52 @@ p {
     margin: 0;
 }
 
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+
 header {
-    width: 100%;
-    height: 80px;
-    margin: 0 auto;
     margin-top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 22px;
+    margin-left: 152px;
+    margin-right: 196px;
 
 }
 
 
 .header_panel {
-
     background: #F6F8FA;
     display: flex;
-
     justify-content: space-between;
     align-items: center;
-    width: 80%;
-    height: 30%;
+
+
 }
 
-.logo {
-    margin-bottom: 15px;
+.logo {}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 11px;
 }
-
-
-
 
 .nav_link {
-    height: 28.94px;
+
     display: inline-block;
     vertical-align: top;
-    margin: 0 7px;
+    margin-right: 14px;
     color: #508FF4;
     font: normal 14px/16px Arial;
     text-decoration: none;
 
+    &:last-child {
+        margin-right: 0;
+    }
 
 }
 
@@ -74,22 +83,22 @@ header {
 }
 
 #top_panel {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 45px;
+    margin-left: 152px;
+    margin-right: 196px;
+    margin-bottom: 44px;
 
 }
 
-.top_panel {
-    padding: 0;
-    width: 80%;
+.h-and-coin{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
+.top_panel {
     background: #FFFFFF;
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
 
 
 }
@@ -107,8 +116,7 @@ header {
     letter-spacing: 0;
     text-align: center;
     text-decoration: none;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 12px 28px;
 }
 
 .list:hover {
@@ -124,13 +132,12 @@ header {
     background: url("/img/Ross-castle2.png") 100% 0% no-repeat;
     background-position: top center;
     background-size: contain;
-    display: flex;
-    justify-content: center;
 
 }
 
 .intro {
-    width: 80%;
+    margin-left: 152px;
+    margin-right: 196px;
     justify-content: center;
     display: block;
     text-align: center;
@@ -140,12 +147,14 @@ header {
 }
 
 .intro_text1 {
-    justify-self: center;
+    
 
     text-shadow: 0px 3px 6px #00000029;
     font-size: 36px;
     font-weight: bolder;
     color: #FFFFFF;
+    margin-left: 39.5%; 
+    margin-top: 22px;
 }
 
 .intro_text2 {
@@ -153,7 +162,7 @@ header {
     letter-spacing: 0;
     color: #FFFFFF;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 53px;
 }
 
 .intro_stats {
@@ -165,8 +174,8 @@ header {
 }
 
 .stats_block {
-    width: 275px;
-    height: 240px;
+    max-width: 275px;
+    max-height: 240px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 5px 25px #52575D1A;
     border: 1px solid #E1E2E5;
@@ -175,6 +184,9 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 41px 47px 35px 48px;
+    width: 15%;
+    height: 100%;
 
 }
 
@@ -187,7 +199,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
 
     &.stats_image--blue {
         background-color: #4EB0D733;
@@ -224,12 +236,13 @@ header {
     letter-spacing: 0;
     color: #28323A;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .diagramsBlock {
-    width: 80%;
+    margin-left: 152px;
+    margin-right: 196px;
 
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;

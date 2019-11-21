@@ -7,16 +7,11 @@ $(document).ready(function () {
 
 function PopUpShow(popup) {
     $(popup).show();
-
     document.body.style.overflow = "hidden";
-
-
 }
 
 function PopUpHide(popup) {
     $(popup).hide();
-
-
-
     document.body.style.overflow = "auto";
 }
+

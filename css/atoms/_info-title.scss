@@ -28,11 +28,15 @@
     &.info-title--elem {
         font: normal 14px/22px Arial;
         letter-spacing: 0.44px;
-        margin-bottom: 0;
         text-transform: none;
+        margin-bottom: 10px;
+        &.info-title--elem--small{
+            margin-bottom: 4px;
+        }
     }
 
     &.info-title--main {
+        font-family: 'Libre Franklin', sans-serif;
         font: normal 24px/29px Libre Franklin;
         letter-spacing: 0;
         color: #28323AB3;
